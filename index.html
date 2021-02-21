@@ -3,94 +3,43 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Javascript Calculator</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
-    <section class="container mt-5 bor">
-        <div class="output width">
-            <div class="row justify-content-center">
-                <div class="col">
-                    4555
-                </div>
-            </div>
-        </div>
-        <div class="body width">
-            <div class="row justify-content-center">
-                <div class="col-6">
-                    <button class="btn Btn">AC</button>
-                </div>
-                <div class="col-3">
-                    <button class="btn Btn">DEL</button>
-                </div>
-                <div class="col-3">
-                    <button class="btn Btn">/</button>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-3">
-                    <button class="btn Btn">1</button>
-                </div>
-                <div class="col-3">
-                    <button class="btn Btn">2</button>
-                </div>
-                <div class="col-3">
-                    <button class="btn Btn">3</button>
-                </div>
-                <div class="col-3">
-                    <button class="btn Btn">*</button>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-3">
-                    <button class="btn Btn">4</button>
-                </div>
-                <div class="col-3">
-                    <button class="btn Btn">5</button>
-                </div>
-                <div class="col-3">
-                    <button class="btn Btn">6</button>
-                </div>
-                <div class="col-3">
-                    <button class="btn Btn">+</button>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-3">
-                    <button class="btn Btn">7</button>
-                </div>
-                <div class="col-3">
-                    <button class="btn Btn">8</button>
-                </div>
-                <div class="col-3">
-                    <button class="btn Btn">9</button>
-                </div>
-                <div class="col-3">
-                    <button class="btn Btn">-</button>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-3">
-                    <button class="btn Btn">.</button>
-                </div>
-                <div class="col-3">
-                    <button class="btn Btn">0</button>
-                </div>
-                <div class="col-6">
-                    <button class="btn Btn">=</button>
+    <section class="container mt-5 py-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-4 col-md-6 col-sm-6 col-12 card p-5">
+                <input id = "display" class="form-control input" type="text">
+                <div id = "calc-body" class="grid">
+                    <button class="button btn btn-danger">7</button>
+                    <button class="button btn btn-danger">8</button>
+                    <button class="button btn btn-danger">9</button>
+                    <button class="button btn btn-danger">4</button>
+                    <button class="button btn btn-danger">5</button>
+                    <button class="button btn btn-danger">6</button>
+                    <button class="button btn btn-danger">1</button>
+                    <button class="button btn btn-danger">2</button>
+                    <button class="button btn btn-danger">3</button>
+                    <button class="button btn btn-danger">0</button>
+                    <button class="button btn btn-danger">+</button>
+                    <button class="button btn btn-danger">-</button>
+                    <button class="button btn btn-danger">*</button>
+                    <button class="button btn btn-danger">/</button>
+                    <button class="button btn btn-success">AC</button>
+                    <button class="button btn btn-warning">DEL</button>
+                    <button class="button btn btn-primary btn-lg btn-block">=</button>
                 </div>
             </div>
         </div>
     </section>
+    <script src="app.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
-        </script>
+
 </body>
 
 </html>

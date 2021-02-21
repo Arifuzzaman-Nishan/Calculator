@@ -3,7 +3,9 @@ const getId = (id) => {
 }
 
 let strNumber = "";
+let strSum = "";
 let sum = 0;
+
 
 let add = 0;
 let sub = 0;
@@ -11,10 +13,12 @@ let mul = 0;
 let div = 0;
 
 let delF = 0;
+let cnt = 0;
 
 getId("calc-body").addEventListener("click", (event) => {
 
     const currentNumber = event.target.innerText;
+    cnt = 0;
 
     if (currentNumber.length <= 3) {
         if (isNaN(currentNumber)) {
@@ -26,10 +30,18 @@ getId("calc-body").addEventListener("click", (event) => {
                 let number = getId("display").value;
                 number = number.slice(0, number.length - 1);
                 getId("display").value = number;
-                strNumber = number;
-                delF = 1;
+                strNumber = strNumber.slice(0,strNumber.length-1);
+                if(strNumber.length === 0){
+                    cnt++;
+                }
+                if(cnt >= 3){
+                    strSum = sum.toString();
+                    strSum = strSum.slice(0,strSum.length-1);
+                    sum = parseInt(strSum);
+                }
             }
             else {
+                // if (delF === 1) sum = 0;
                 switch (currentNumber) {
                     case '+':
                         // console.log( strNumber);
